@@ -7,21 +7,13 @@ body {
 }
 
 header {
-    background-image: url('background1.jpg'); /* Adds background image */
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the background image */
-    color: white; /* Changes the text color for better readability */
-    padding: 20px 0; /* Adds some vertical padding */
-    text-align: center; /* Centers the text */
+    background-image: url('background1.jpg'); /* Assumes you have a background.jpg in your directory */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
-
-header h1 {
-    font-size: 36px; /* Adjust this value to increase or decrease the size */
-    color: #333; /* Optional: change the color of the title */
-    text-align: center; /* Optional: ensure the title is centered */
-    padding: 10px 0; /* Optional: add some padding around the title */
-}
-
 
 nav ul {
     list-style: none;
@@ -38,17 +30,37 @@ nav ul li a {
     text-decoration: none;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.products {
+    width: 70%;
+}
+
 .product {
     background-color: white;
-    margin: 20px;
+    margin: 10px 0;
     padding: 10px;
-    text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .product img {
     width: 100px;
     height: 100px;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -60,12 +72,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
-body {
-    background-image: url('background2.jpg'); /* Link to your background image */
-    background-size: cover; /* Cover ensures the image covers the entire body */
-    background-position: center; /* Center the background image */
-    color: #333;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
