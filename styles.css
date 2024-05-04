@@ -7,11 +7,14 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+    background-image: url('background1.jpg'); /* Adds background image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the background image */
+    color: white; /* Changes the text color for better readability */
+    padding: 20px 0; /* Adds some vertical padding */
+    text-align: center; /* Centers the text */
 }
+
 header h1 {
     font-size: 36px; /* Adjust this value to increase or decrease the size */
     color: #333; /* Optional: change the color of the title */
@@ -58,7 +61,7 @@ footer {
     width: 100%;
 }
 body {
-    background-image: url('background.jpg'); /* Link to your background image */
+    background-image: url('background2.jpg'); /* Link to your background image */
     background-size: cover; /* Cover ensures the image covers the entire body */
     background-position: center; /* Center the background image */
     color: #333;
