@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .products {
-    width: 30%; /* Slimmer product sections */
+    width: 10%; /* Slimmer product sections */
     background-color: #ffffff;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
