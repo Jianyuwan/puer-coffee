@@ -12,6 +12,13 @@ header {
     padding: 10px 20px;
     text-align: center;
 }
+header h1 {
+    font-size: 36px; /* Adjust this value to increase or decrease the size */
+    color: #333; /* Optional: change the color of the title */
+    text-align: center; /* Optional: ensure the title is centered */
+    padding: 10px 0; /* Optional: add some padding around the title */
+}
+
 
 nav ul {
     list-style: none;
