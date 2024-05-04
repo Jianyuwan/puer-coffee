@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -7,17 +7,17 @@ body {
 }
 
 header {
-    background-image: url('header-background1.jpg'); /* Background for the header */
+    background-image: url('background1.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 48px;
+    font-family: 'Arial', serif;
 }
 
 nav ul {
@@ -36,27 +36,28 @@ nav ul li a {
 }
 
 .promo-background {
-    background-image: url('middle-background2.jpg'); /* Additional background under products */
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-    display: flex;
-    justify-content: center; /* Centers the content within this section */
 }
 
 .content {
-    width: 80%; /* Adjust width as necessary */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .products {
-    width: 70%;
-    background-color: #ffffff;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 60%;
+    background-color: transparent; /* To let your beautiful background shine through */
 }
 
 .product {
-    margin: 10px 0;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
 
@@ -65,22 +66,10 @@ nav ul li a {
     height: auto;
 }
 
-.sidebar {
-    width: 30%;
-    padding: 20px;
-}
-
-.sidebar img {
-    width: 100%;
-    height: auto;
-}
-
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
+    padding: 20px 0;
     width: 100%;
 }
