@@ -60,9 +60,9 @@ nav ul li a {
 }
 
 .product img {
-    width: 150px; /* Fixed width for product images */
+    width: 15px; /* Fixed width for product images */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between image and text */
+    margin-right: 2px; /* Space between image and text */
 }
 
 footer {
