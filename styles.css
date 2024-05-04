@@ -1,74 +1,77 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Main font for the body */
+    color: #333; /* Main text color */
+    background-color: #f4f4f4; /* Light grey background for any areas not covered by images */
 }
 
 header {
-    background-image: url('background1.jpg');
+    background-image: url('background1.jpg'); /* Header background image */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0; /* Padding at the top and bottom */
 }
 
 header h1 {
-    font-size: 48px;
-    font-family: 'Arial', serif;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for the main title */
+    font-size: 48px; /* Large font size for the title */
+    margin-bottom: 20px; /* Space below the title */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Aligns navigation items in a row */
+    justify-content: center; /* Centers navigation items horizontally */
+    padding: 20px 0; /* Padding above and below the navigation */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 15px; /* Horizontal space between navigation items */
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Removes underline from links */
+    font-size: 18px; /* Slightly larger font size for navigation */
 }
 
-.promo-background {
-    background-image: url('background2.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-}
-
+/* Main content area styling */
 .content {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Aligns child divs (products and sidebar) in a row */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Aligns items at the start of the flex container */
     padding: 20px;
 }
 
 .products {
-    width: 60%;
-    background-color: transparent; /* To let your beautiful background shine through */
+    width: 70%;
+    display: flex;
+    flex-direction: column; /* Stacks product sections vertically */
+    align-items: center; /* Centers products horizontally */
 }
 
 .product {
-    width:30%;
     background-color: #ffffff;
-    margin: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
+    margin: 20px 0; /* Margin above and below each product */
+    padding: 20px;
+    width: 100%; /* Each product takes full width of the container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
 }
-.product{
-    margin:10px 0;
-    padding:20px;
-    text-align:center;
-}
+
 .product img {
-    width: 100px;
-    height: auto;
+    width: 150px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and text */
 }
 
 footer {
@@ -76,5 +79,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: relative; /* Makes the footer relative to the flow of the document */
     width: 100%;
 }
+
