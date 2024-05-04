@@ -1,66 +1,82 @@
+/* Reset some basic styling */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and border are included in width/height calculations */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif; /* Consistent font throughout the body */
+    background-color: #f4f4f4; /* Light background color for any non-covered areas */
+    color: #333; /* Default text color */
 }
 
 header {
-    background-image: url('background1.jpg');
+    background-image: url('background1.jpg'); /* Header background */
     background-size: cover;
     background-position: center;
-    color: white;
+    padding: 40px 0; /* Padding on top and bottom of the header */
     text-align: center;
-    padding: 40px 0;
+    color: white;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none; /* Remove default list styling */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the navigation items horizontally */
     padding: 10px 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 20px; /* Spacing between nav items */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text for readability */
+    font-size: 18px; /* Larger font size for navigation links */
 }
 
-.product-row {
+/* Main content and product styling */
+.content {
     display: flex;
-    justify-content: center;
-    background-image: url('background2.jpg');
+    justify-content: center; /* Center the product row horizontally */
+    flex-wrap: wrap; /* Allows products to wrap in smaller screens */
+    background-image: url('background2.jpg'); /* Background under the products */
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 20px; /* Padding around the content */
 }
 
 .product {
-    width: 300px;
-    background-color: #ffffff;
-    margin: 0 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
+    flex-basis: 30%; /* Each product takes up 30% of the .content width */
+    margin: 10px; /* Margin around products for spacing */
+    padding: 20px; /* Padding inside product boxes */
+    background-color: white; /* White background for product boxes */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items inside each product box */
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 150px; /* Fixed width for product images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0; /* Reduced padding could reduce excess space if too large */
+    width: 100%; /* Ensure the footer spans the full width of the page */
 }
+
+/* Additional styles for responsiveness and positioning */
+@media (max-width: 768px) {
+    .product {
+        flex-basis: 100%; /* Each product takes full width in smaller screens */
+    }
+}
+
