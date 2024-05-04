@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url('header-background2.jpg'); /* Add your desired background image here */
+    background-image: url('header-background.jpg'); /* Background for the header */
     background-size: cover;
     background-position: center;
     color: white;
@@ -35,18 +35,24 @@ nav ul li a {
     text-decoration: none;
 }
 
-.content {
-    display: flex;
-    justify-content: flex-end;
+.promo-background {
+    background-image: url('middle-background.jpg'); /* Additional background under products */
     padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers the content within this section */
+}
+
+.content {
+    width: 80%; /* Adjust width as necessary */
+    display: flex;
+    justify-content: space-between;
 }
 
 .products {
-    width: 50%; /* Slimmer product sections */
+    width: 70%;
     background-color: #ffffff;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-left: 20px; /* Adds some spacing between products */
 }
 
 .product {
