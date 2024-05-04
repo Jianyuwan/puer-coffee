@@ -54,13 +54,18 @@ nav ul li a {
 }
 
 .product {
+    width:70%;
     background-color: #ffffff;
     margin: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
 }
-
+.product{
+    margin:10px 0;
+    padding:20px;
+    text-align:center;
+}
 .product img {
     width: 100px;
     height: auto;
