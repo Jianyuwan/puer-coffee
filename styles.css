@@ -1,82 +1,86 @@
-/* Reset some basic styling */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in width/height calculations */
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Consistent font throughout the body */
-    background-color: #f4f4f4; /* Light background color for any non-covered areas */
-    color: #333; /* Default text color */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-image: url('background1.jpg'); /* Header background */
+    background-image: url('background1.jpg');
     background-size: cover;
     background-position: center;
-    padding: 40px 0; /* Padding on top and bottom of the header */
-    text-align: center;
     color: white;
+    text-align: center;
+    padding: 40px 0;
 }
 
 nav ul {
-    list-style: none; /* Remove default list styling */
+    list-style-type: none;
     display: flex;
-    justify-content: center; /* Center the navigation items horizontally */
-    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 nav ul li {
-    margin: 0 20px; /* Spacing between nav items */
+    padding: 0 20px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* White text for readability */
-    font-size: 18px; /* Larger font size for navigation links */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-/* Main content and product styling */
 .content {
     display: flex;
-    justify-content: center; /* Center the product row horizontally */
-    flex-wrap: wrap; /* Allows products to wrap in smaller screens */
-    background-image: url('background2.jpg'); /* Background under the products */
+    justify-content: space-evenly; /* Ensures even spacing between items */
+    background-image: url('background2.jpg');
     background-size: cover;
     background-position: center;
-    padding: 20px; /* Padding around the content */
+    padding: 20px 0;
+    margin: 0 auto; /* Centers the content horizontally */
+    width: 100%; /* Full width to ensure it fills the parent */
 }
 
 .product {
-    flex-basis: 70%; /* Each product takes up 30% of the .content width */
-    margin: 1px; /* Margin around products for spacing */
-    padding: 2px; /* Padding inside product boxes */
-    background-color: white; /* White background for product boxes */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+    width: 30%; /* Width adjusted for each product */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items inside each product box */
+    flex-direction: column; /* Aligns content of each product vertically */
+    align-items: center; /* Centers items within the product box */
+    margin: 10px; /* Provides some space around each product */
 }
 
 .product img {
-    width: 150px; /* Fixed width for product images */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between image and text */
+    width: 100%; /* Makes the image responsive within its container */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and the text below it */
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0; /* Reduced padding could reduce excess space if too large */
-    width: 100%; /* Ensure the footer spans the full width of the page */
+    padding: 20px 0;
+    position: relative; /* Ensures footer is part of the flow and not fixed */
+    width: 100%;
 }
 
-/* Additional styles for responsiveness and positioning */
 @media (max-width: 768px) {
+    .content, .product {
+        flex-direction: column;
+        align-items: center;
+    }
     .product {
-        flex-basis: 100%; /* Each product takes full width in smaller screens */
+        width: 80%; /* Larger width for smaller screens */
     }
 }
-
