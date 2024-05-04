@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url('header-background2.jpg'); /* Background for the header */
+    background-image: url('header-background1.jpg'); /* Background for the header */
     background-size: cover;
     background-position: center;
     color: white;
