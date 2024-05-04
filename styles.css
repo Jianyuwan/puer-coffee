@@ -50,8 +50,8 @@ nav ul li a {
 
 .product {
     flex-basis: 70%; /* Each product takes up 30% of the .content width */
-    margin: 10px; /* Margin around products for spacing */
-    padding: 20px; /* Padding inside product boxes */
+    margin: 1px; /* Margin around products for spacing */
+    padding: 2px; /* Padding inside product boxes */
     background-color: white; /* White background for product boxes */
     box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Subtle shadow for depth */
     display: flex;
