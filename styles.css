@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url('header-background.jpg'); /* Background for the header */
+    background-image: url('header-background1.jpg'); /* Background for the header */
     background-size: cover;
     background-position: center;
     color: white;
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 .promo-background {
-    background-image: url('middle-background.jpg'); /* Additional background under products */
+    background-image: url('middle-background2.jpg'); /* Additional background under products */
     padding: 20px;
     display: flex;
     justify-content: center; /* Centers the content within this section */
